@@ -5,6 +5,8 @@ const text2 = document.getElementById("letters");
 const result = document.getElementById("result");
 const button = document.getElementById("button");
 const button2 = document.getElementById("button2");
+const button4 = document.getElementById("button4");
+const animalList = document.getElementById("animals");
 
 button.addEventListener ("click", (event) => {
   event.preventDefault();
@@ -31,5 +33,13 @@ sum += number;
 result.innerHTML = sum;
 });
 
-const animals = ["katt", "hund", "sköldpadda"];
+button4.addEventListener("click", (event) => {
+  event.preventDefault();
+  const animals = ["katt", "hund", "sköldpadda"];
+  animals.forEach(animal => {
+    const li = document.createElement("li");
+    li.textContent = animal;
+    animalList.appendChild(li);
+  });
+});
 
