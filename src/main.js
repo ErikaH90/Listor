@@ -2,6 +2,7 @@ const nameInput = document.getElementById("name");
 const lastnameInput = document.getElementById("lastname");
 const text = document.getElementById("length");
 const text2 = document.getElementById("letters");
+const result = document.getElementById("result");
 const button = document.getElementById("button");
 const button2 = document.getElementById("button2");
 
@@ -20,4 +21,15 @@ button2.addEventListener ("click", (event) => {
   }
 });
 
+button3.addEventListener("click", (event) => {
+event.preventDefault();
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sum = 0;
+numbers.forEach(number => {
+sum += number;
+});
+result.innerHTML = sum;
+});
+
+const animals = ["katt", "hund", "sköldpadda"];
 
