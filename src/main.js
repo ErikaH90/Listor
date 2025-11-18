@@ -5,6 +5,6 @@ const button = document.getElementById("button");
 button.addEventListener ("click", (event) => {
   event.preventDefault();
   const textLength = nameInput.value.length;
-  text.innerText = "Namnet är " + textLength;
+  text.innerText = "Namnet är " + textLength " bokstäver långt.";
 });
 
